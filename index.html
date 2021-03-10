@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angolo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png">
+</head>
+<body>
+<header>
+    <input type="checkbox" class="header-nav-trigger" id="nav-trigger" />
+    <label class="header-nav-trigger-label" for="nav-trigger">
+        <span class="header-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </label>
+
+    <nav class="header-nav">
+        <a href="#products" data-lang>Produkty</a>
+        <a href="#contact" data-lang>Kontakt</a>
+        <img id="language-trigger" src="./icons/eng-flag.svg" alt="flag"/>
+    </nav>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Angolo</h1>
+            <div>
+                <a href="#products">
+                    <img src="./icons/wine.svg" alt="wine"/>
+                </a>
+                <a href="#products">
+                    <img src="./icons/cheese.svg" alt="cheese"/>
+                </a>
+                <a href="#products">
+                    <img src="./icons/meat.svg" alt="meat"/>
+                </a>
+                <a href="#products">
+                    <img src="./icons/olive.svg" alt="olive"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <h2 id="products" class="section-header" data-lang>Produkty</h2>
+    <div class="products-container">
+        <div class="product-card">
+            <div class="left">
+                <p>Prosciutto crudo, cotto, salame, salisicia...</p>
+            </div>
+            <img src="./images/prosciutto2.jpg" alt="prosciutto" />
+        </div>
+        <div class="product-card">
+            <div class="right">
+                <p>Primitivo, chianti, barolo...</p>
+            </div>
+            <img src="./images/wine.jpg" alt="wine" />
+        </div>
+        <div class="product-card">
+            <div class="left">
+                <p>Mozzarella, parmezan, gorgonzola, pecorino...</p>
+            </div>
+            <img src="./images/cheese2.jpg" alt="cheese" />
+        </div>
+        <div class="product-card">
+            <div class="right">
+                <p>Nie znam nazw oliwy i dodatków...</p>
+            </div>
+            <img src="./images/olive.jpg" alt="olive" />
+        </div>
+    </div>
+    <h2 id="contact" class="section-header" data-lang>Kontakt</h2>
+    <div class="contact-container">
+        <span class="contact-heading" data-lang>Tel</span>
+        <span class="contact-text"><a href="tel:123456789">+48 123456789</a></span>
+
+        <hr/>
+
+        <span class="contact-heading" data-lang>Adres</span>
+        <span class="contact-text">ul. Słowackiego 37 <br/> Gdańsk Wrzeszcz</span>
+        <small><i>(Garnizon)</i></small>
+
+        <hr/>
+
+        <span class="contact-heading">EMAIL</span>
+        <span class="contact-text"><a href="mailto:domino@italy.pl">domino@italy.pl</a></span>
+    </div>
+</main>
+<footer>
+    <div id="map">
+
+    </div>
+    <div class="content">
+        Angolo 2021 ©
+    </div>
+</footer>
+<script src="./script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+        type="text/javascript"></script>
+</body>
+</html>
