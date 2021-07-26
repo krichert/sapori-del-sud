@@ -21,10 +21,12 @@
     var languageTrigger = document.querySelector("#language-trigger");
     var elementsToTranslate = document.querySelectorAll("[data-lang]");
     var translations = [
+        ['Strona główna', 'Home'],
         ['Produkty', 'Products'],
         ['Kontakt', 'Contact'],
         ['Tel', 'Phone'],
-        ['Adres', 'Address']
+        ['Adres', 'Address'],
+        ['Delikatesy Sródziemnomorskie', 'Mediterranean Deli'],
     ];
 
     function translate(language) {

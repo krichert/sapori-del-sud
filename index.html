@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angolo</title>
+    <title>Sapori del Sud</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.png">
 </head>
 <body>
-<header>
+<header id="header">
     <input type="checkbox" class="header-nav-trigger" id="nav-trigger" />
     <label class="header-nav-trigger-label" for="nav-trigger">
         <span class="header-nav-icon">
@@ -23,13 +23,16 @@
     </label>
 
     <nav class="header-nav">
+        <img class="logo" src="./images/logo/light.eps.svg" alt="logo"/>
+        <a href="#header" data-lang>Strona główna</a>
         <a href="#products" data-lang>Produkty</a>
         <a href="#contact" data-lang>Kontakt</a>
         <img id="language-trigger" src="./icons/eng-flag.svg" alt="flag"/>
     </nav>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Angolo</h1>
+            <img class="logo" src="./images/logo/light.eps.svg" alt="logo" />
+            <h1 data-lang>Delikatesy Sródziemnomorskie</h1>
             <div>
                 <a href="#products">
                     <img src="./icons/wine.svg" alt="wine"/>
@@ -54,7 +57,7 @@
             <div class="left">
                 <p>Prosciutto crudo, cotto, salame, salisicia...</p>
             </div>
-            <img src="./images/prosciutto2.jpg" alt="prosciutto" />
+            <img src="images/prosciutto.jpg" alt="prosciutto" />
         </div>
         <div class="product-card">
             <div class="right">
@@ -66,7 +69,7 @@
             <div class="left">
                 <p>Mozzarella, parmezan, gorgonzola, pecorino...</p>
             </div>
-            <img src="./images/cheese2.jpg" alt="cheese" />
+            <img src="images/cheese.jpg" alt="cheese" />
         </div>
         <div class="product-card">
             <div class="right">
@@ -97,7 +100,7 @@
 
     </div>
     <div class="content">
-        Angolo 2021 ©
+        <span>Sapori del Sud 2021 ©</span>
     </div>
 </footer>
 <script src="./script.js"></script>

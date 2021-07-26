@@ -7,15 +7,23 @@ body {
     margin: 0;
     color: #fff;
     font-family: 'Monaco', sans-serif;
+    background-color: #232227;
+    background-image: linear-gradient(#17181D, #232227);
 }
 
 header {
     height: 100vh;
-    background-image: url('./images/antipasti2.webp');
+    background-image: url('./images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        background-image: url('./images/background_sqaure.jpg');
+    }
 }
 
 .header-content {
@@ -50,18 +58,22 @@ header {
 }
 
 .header-content-inner h1 {
-    font-size: 75px;
+    font-size: 20px;
     font-weight: 800;
-    line-height: 75px;
-    letter-spacing: 10px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     font-family: 'Grado Gradoo', sans-serif;
+}
+
+.header-content-inner img.logo {
+    max-width: calc(50% - 30px);
 }
 
 @media screen and (max-width: 576px) {
     .header-content-inner h1 {
-        font-size: 50px;
-        line-height: 50px;
-        letter-spacing: 8px;
+        font-size: 15px;
+        line-height: 30px;
     }
 }
 
@@ -93,12 +105,18 @@ header {
     align-items: center;
     padding: 15px 0;
     z-index: 1000;
-
     min-height: 100vh;
-    width: 200px;
-    right: -200px;
+    width: 300px;
+    right: -300px;
     transition: right 0.5s ease-in-out;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 576px) {
+    .header-nav {
+        width: 200px;
+        right: -200px;
+    }
 }
 
 .header-nav a {
@@ -128,11 +146,16 @@ header {
     right: 0;
 }
 
-.header-nav img {
+.header-nav img#language-trigger {
     width: 30px;
     position: absolute;
     top: 29px;
     left: 30px;
+}
+
+.header-nav img.logo {
+    width: 125px;
+    margin-bottom: 50px;
 }
 
 .header-nav img:hover {
@@ -230,10 +253,10 @@ header {
     left: 8px;
 }
 
-main {
-    background-color: #232227;
-    background-image: linear-gradient(#17181D, #232227);
-}
+/*main {*/
+/*    background-color: #232227;*/
+/*    background-image: linear-gradient(#17181D, #232227);*/
+/*}*/
 
 .section-header {
     font-family: 'Grado Gradoo', sans-serif;
