@@ -13,17 +13,11 @@ body {
 
 header {
     height: 100vh;
-    background-image: url('./images/background.jpg');
-    background-repeat: no-repeat;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-@media screen and (max-width: 992px) {
-    header {
-        background-image: url('./images/background_sqaure.jpg');
-    }
 }
 
 .header-content {
