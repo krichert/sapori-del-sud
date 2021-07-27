@@ -12,12 +12,22 @@ body {
 }
 
 header {
-    height: 100vh;
-    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-position: center center;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-attachment: scroll;
+    }
 }
 
 .header-content {
