@@ -316,10 +316,16 @@ header {
 }
 
 .products-container .product-card div p {
-    width: 50%;
+    width: 70%;
     margin: 30px;
     display: none;
     font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .products-container .product-card div p {
+        font-size: 14px;
+    }
 }
 
 .products-container .product-card div:hover {
