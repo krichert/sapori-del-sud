@@ -27,6 +27,11 @@
         ['Tel', 'Phone'],
         ['Adres', 'Address'],
         ['Delikatesy Sródziemnomorskie', 'Mediterranean Deli'],
+        ['Szeroki wybór wędlin pochodzących z różnych regionów Włoch. Od popularnego Prosciutto Crudo przez Mortadellę z pistacjami po Porchettę i wiele innych ...', 'A wide selection of cold cuts from different regions of Italy. From the popular Prosciutto Crudo to Mortadella with pistachios to Porchetta and many more ...'],
+        ['Bogata gama win z Trydentu, Lombardii, Toskanii i nie tylko ...', 'A wide range of wines from Trento, Lombardy, Tuscany and more ...'],
+        ['Skosztuj prawdziwych włoskich specjałów. Od serów górskich produkowanych z alpejskiego mleka po sery owcze z rozmaitymi dodatkami ...', 'Taste real Italian specialties. From mountain cheeses made from alpine milk to sheep\'s cheeses with a variety of toppings ...'],
+        ['Poczuj smak i aromat gęstej, niefiltrowanej oliwy ...', 'Feel the taste and aroma of thick, unfiltered olive oil ...'],
+        ['Sycyliskie pomarańcze, cytryna z wybrzeża Amalfi, pomidory datterino, papryki, bakłażany i cukinie. Wszystko świeże i niesamowicie pyszne ...', 'Sicilian oranges, lemon from the Amalfi coast, datterino tomatoes, peppers, eggplants and courgettes. Everything is fresh and amazingly delicious ...'],
     ];
 
     function translate(language) {
@@ -39,7 +44,7 @@
                     actualTranslation = translation[0];
                 }
 
-                return actualTranslation.toLowerCase() === element.innerText.toLowerCase()
+                return actualTranslation.toLowerCase().replace(/\s/g, '') === element.innerText.toLowerCase().replace(/\s/g, '')
             })
 
             if (language === 'eng') {
